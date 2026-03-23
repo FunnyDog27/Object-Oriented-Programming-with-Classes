@@ -77,3 +77,8 @@ const eggs = new Product("Eggs", 5.99, 12);
 
 const myStore = new Store();
 
+myStore.addProduct(apple);
+myStore.addProduct(bread);
+myStore.addProduct(milk);
+myStore.addProduct(rice);
+myStore.addProduct(eggs);
