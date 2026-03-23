@@ -111,3 +111,5 @@ if (foundProduct) {
 } else {
   output += "Product not found.\n";
 }
+
+output += `\nTotal Products Created: ${Product.productCount}\n`;
