@@ -91,3 +91,13 @@ for (let i = 0; i < myStore.inventory.length; i++) {
 }
 
 output += `\nTotal Inventory Value Before Discount: $${myStore.getInventoryValue().toFixed(2)}\n`;
+
+Product.applyDiscount(myStore.inventory, 0.15);
+
+output += "\n=== INVENTORY AFTER 15% DISCOUNT ===\n";
+
+for (let i = 0; i < myStore.inventory.length; i++) {
+  output += myStore.inventory[i].toString() + "\n";
+}
+
+output += `\nTotal Inventory Value After Discount: $${myStore.getInventoryValue().toFixed(2)}\n`;
