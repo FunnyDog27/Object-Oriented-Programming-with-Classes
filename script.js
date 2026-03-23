@@ -53,3 +53,14 @@ class Store {
 
     return total;
   }
+
+  findProductByName(name) {
+    for (let i = 0; i < this.inventory.length; i++) {
+      if (this.inventory[i].name.toLowerCase() === name.toLowerCase()) {
+        return this.inventory[i];
+      }
+    }
+
+    return null;
+  }
+}
