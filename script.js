@@ -64,3 +64,7 @@ class Store {
     return null;
   }
 }
+
+// ------------------------
+// Testing the system
+// ------------------------
