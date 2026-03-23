@@ -113,3 +113,6 @@ if (foundProduct) {
 }
 
 output += `\nTotal Products Created: ${Product.productCount}\n`;
+
+document.getElementById("output").textContent = output;
+
