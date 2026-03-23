@@ -82,3 +82,12 @@ myStore.addProduct(bread);
 myStore.addProduct(milk);
 myStore.addProduct(rice);
 myStore.addProduct(eggs);
+
+let output = "";
+output += "=== INVENTORY BEFORE DISCOUNT ===\n";
+
+for (let i = 0; i < myStore.inventory.length; i++) {
+  output += myStore.inventory[i].toString() + "\n";
+}
+
+output += `\nTotal Inventory Value Before Discount: $${myStore.getInventoryValue().toFixed(2)}\n`;
