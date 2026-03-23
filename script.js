@@ -83,6 +83,7 @@ myStore.addProduct(bread);
 myStore.addProduct(milk);
 myStore.addProduct(rice);
 myStore.addProduct(eggs);
+myStore.addProduct(flour);
 
 let output = "";
 output += "=== INVENTORY BEFORE DISCOUNT ===\n";
