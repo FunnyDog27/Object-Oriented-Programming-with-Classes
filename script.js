@@ -16,3 +16,10 @@ class Product {
   toString() {
     return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
   }
+
+  static applyDiscount(products, discount) {
+    for (let i = 0; i < products.length; i++) {
+      products[i].price = products[i].price * (1 - discount);
+    }
+  }
+}
