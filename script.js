@@ -68,3 +68,9 @@ class Store {
 // ------------------------
 // Testing the system
 // ------------------------
+
+const apple = new Product("Banana", 2.50, 50);
+const bread = new PerishableProduct("Bread", 3.20, 15, "2026-03-30");
+const milk = new PerishableProduct("Milk", 4.50, 10, "2026-03-25");
+const rice = new Product("Corn", 12.99, 20);
+const eggs = new Product("Eggs", 5.99, 12);
