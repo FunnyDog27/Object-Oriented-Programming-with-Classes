@@ -1,4 +1,5 @@
 class Product {
+
   static productCount = 0;
 
   constructor(name, price, quantity) {
@@ -8,4 +9,10 @@ class Product {
 
     Product.productCount++;
   }
-  
+  getTotalValue() {
+    return this.price * this.quantity;
+  }
+
+  toString() {
+    return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
+  }
