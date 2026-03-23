@@ -101,3 +101,13 @@ for (let i = 0; i < myStore.inventory.length; i++) {
 }
 
 output += `\nTotal Inventory Value After Discount: $${myStore.getInventoryValue().toFixed(2)}\n`;
+
+const foundProduct = myStore.findProductByName("Milk");
+
+output += "\n=== SEARCH RESULT ===\n";
+
+if (foundProduct) {
+  output += foundProduct.toString() + "\n";
+} else {
+  output += "Product not found.\n";
+}
